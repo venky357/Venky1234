@@ -48,7 +48,7 @@ node {
             def robj = jsonSlurper.parseText(jsobSubstring)
             //if (robj.status != "ok") { error 'org creation failed: ' + robj.message }
             SFDC_USERNAME=robj.result.username
-            printf SFDC_USERNAME
+            println SFDC_USERNAME
             robj = null
             
         }
